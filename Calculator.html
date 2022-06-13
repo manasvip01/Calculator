@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-pink-400 ">
+    <div class="grid place-items-center gap-1 border-white border-4 p-4 m-44 shadow-lg">
+        <h1 class="text-4xl font-serif text-white text-center underline">Calculator</h1>
+        <div class="flex flex-row ">
+        <h2 id="first" class="mx-2  font-sans text-xl font-bold text-white">--</h2>
+        <h2 id="second" class="mx-2 font-sans text-xl font-bold text-white">--</h2>
+    </div>
+    <div class="py-1 mx-3">
+        <button id="number1" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number1()">1</button>
+        <button id="number2" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number2()">2</button>
+        <button id="number3" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number3()">3</button>
+    </div>
+    <div class="py-1 mx-3">
+        <button id="number4" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number4()">4</button>
+        <button id="number5" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number5()">5</button>
+        <button id="number6" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number6()">6</button>
+    </div>
+    <div class="py-1 mx-3">
+        <button id="number7" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number7()">7</button>
+        <button id="number8" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number8()">8</button>
+        <button id="number9" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number9()">9</button>
+    </div>
+    <div class="py-1 pb-2 mx-12">
+        <!-- <button id="number1" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2">1</button> -->
+        <button id="number10" class="text-xl font-mono font-bold bg-yellow-300 px-1 shadow-md hover:bg-yellow-200 border-black border-2" onclick="number10">10</button>
+        <!-- <button id="number3" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2">3</button> -->
+    </div>
+    <div>
+        <button id="multiply" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="multiply()">*</button>
+        <button id="add" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="add()">+</button>
+        <button id="subtract" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="subtract()">-</button>
+        <button id="divide" class="text-xl font-mono font-bold bg-yellow-300 px-2 shadow-md hover:bg-yellow-200 border-black border-2" onclick="division()">/</button>
+    </div>
+    <div id="sum" class="text-2xl font-serif font-bold text-white p-2">Answer:</div>
+    </div>
+    <script>
+        let first=document.getElementById("first");
+        let second=document.getElementById("second");
+        let sum=document.getElementById("sum");
+        let one;
+        let two;
+        
+        function number1(){
+            if(first.textContent!="--"){
+                second.textContent=1;
+                two=1;
+            }
+            else{
+                first.textContent=1;
+                one=1;
+            }
+        }
+
+        function number2(){
+            if(first.textContent!="--"){
+                second.textContent=2;
+                two=2
+            }
+            else{
+                first.textContent=2;
+                one=2;
+            }
+        }
+
+        function number3(){
+            if(first.textContent!="--"){
+                second.textContent=3;
+                two=3;
+            }
+            else{
+                first.textContent=3;
+                one=3;
+            }
+        }
+
+        function number4(){
+            if(first.textContent!="--"){
+                second.textContent=4;
+                two=4;
+            }
+            else{
+                first.textContent=4;
+                one=4;
+            }
+        }
+
+        function number5(){
+            if(first.textContent!="--"){
+                second.textContent=5;
+                two=5;
+            }
+            else{
+                first.textContent=5;
+                one=5;
+            }
+        }
+
+        function number6(){
+            if(first.textContent!="--"){
+                second.textContent=6;
+                two=6;
+            }
+            else{
+                first.textContent=6;
+                one=6;
+            }
+        }
+
+        function number7(){
+            if(first.textContent!="--"){
+                second.textContent=7;
+                two=7;
+            }
+            else{
+                first.textContent=7;
+                one=7;
+            }
+        }
+
+        function number8(){
+            if(first.textContent!="--"){
+                second.textContent=8;
+                two=8;
+            }
+            else{
+                first.textContent=8;
+                one=8;
+            }
+        }
+        function number9(){
+            if(first.textContent!="--"){
+                second.textContent=9;
+                two=9;
+            }
+            else{
+                first.textContent=9;
+                one=9;
+            }
+        }
+
+        function number10(){
+            if(first.textContent!="--"){
+                second.textContent=10;
+                two=10;
+            }
+            else{
+                first.textContent=10;
+                one=10;
+            }
+        }
+        function multiply(){
+            let h="Answer: ";
+            k= one*two;
+            sum.textContent=h+ k;
+        }
+
+        function add(){
+            let h="Answer: ";
+            k=one+two;
+            sum.textContent=h+ k;
+        }
+
+        function subtract(){
+            let h="Answer: ";
+            k=one-two;
+            sum.textContent=h+k;
+        }
+
+        function division(){
+            let h="Answer: ";
+            k=one/two;
+            sum.textContent=h+k;
+        }
+    </script>
+</body>
+</html>
